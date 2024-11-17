@@ -4,16 +4,22 @@
 #include <vector>
 #include <iomanip>
 
+using namespace std;
+
 int main(){
-  vector<vector<map>> char; // You can use a 2D vector if you'd like, but it's a lot better to emulate a 2D vector with a 1D one.
+	vector<string> map;
+	map = {{"                     ","                     ","
+	char input;
 
-  // This is where all your logic will go
-  while (true){
-    // TODO: Get user input
+	// This is where all your logic will go
+		while (input != 'p'){
+		// TODO: Get user input
+		if (input == 'w'){
+			y_axis
+		// TODO Move character or something cool using the user's input
 
-    // TODO Move character or something cool using the user's input
-
-    // TODO: Output map
-
-  }
+		// TODO: Output map
+		string actual_map = "                    \n";
+		cout << actual_map;
+	}
 }
