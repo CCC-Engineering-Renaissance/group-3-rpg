@@ -32,12 +32,14 @@ int main(){
   if (w == 1) {
 	set_alternate_window(true); 
 	cout << BOLDMAGENTA << "You and your friends receive a million dollars to go on a dream vacation. Where are you persuading your friends to travel to?\n";
-  	cout << "1) Skiing in the Alps! Who doesn’t love the rush of wind whilst speeding down an icy slope?\n";
-  	cout << "2) A late-night tea party in Paris, where you can all enjoy decadent desserts and a beautiful view of the city.\n";
-  	cout << "3) A backpacking trip, so you can stare into space and sit in silence. You might enjoy a good book.\n";
-  	cout << "4) A trip to the museum! You love to see all the artifacts and grab pamphlets on your way out.\n"; 
-  	cout << "3) You want to travel the whole world anyhow, so you don’t have a particular preference.\n"; 
+  	cout << "1. Skiing in the Alps! Who doesn’t love the rush of wind whilst speeding down an icy slope?\n";
+  	cout << "2. A late-night tea party in Paris, where you can all enjoy decadent desserts and a beautiful view of the city.\n";
+  	cout << "3. A backpacking trip, so you can stare into space and sit in silence. You might enjoy a good book.\n";
+  	cout << "4. A trip to the museum! You love to see all the artifacts and grab pamphlets on your way out.\n"; 
+  	cout << "5. You want to travel the whole world anyhow, so you don’t have a particular preference.\n";
+	// The cout statements output the question and individual answers for the test. 
 	cin >> numberone; 
+	// The cin allows the user to answer with a number 1-5.
 	switch(numberone) {
 		case 1: 
 			firecount++; 
@@ -52,6 +54,8 @@ int main(){
 		default: 
 			return 0; 
 		}
+	// The cases for the switch statement help us to determine which dragon the player will recieve. 
+	// Each case adds one to the number of answers for a certain type of dragon depending on the number answered. The largest number at the end determines what dragon the player recieves. 
 	
 	cout << BOLDMAGENTA << "What is one thing you are scared to lose the most?\n";
 	cout << "1. Freedom.\n"; 
@@ -208,14 +212,15 @@ int main(){
                 default:
                         return 0;
                 }
-	  cout << BOLD GREEN << "What is your favorite movie genre?\n"; 
+
+	  cout << BOLDGREEN << "What is your favorite movie genre?\n"; 
 	  cout << "1. Action and horror movies.\n"; 
   	  cout << "2. Comedies.\n"; 
 	  cout << "3. I prefer TV shows.\n"; 
 	  cout << "4. Science fiction and Fantasy.\n";
 	  cout << "5. Documentaries.\n"; 
 	  cin >> numbernine; 
-	  switch(numbereight) {
+	  switch(numbernine) {
                 case 1:
                         firecount++;
                 case 2:
@@ -229,18 +234,16 @@ int main(){
                 default:
                         return 0;
                 }
-  	}	
-  }
-  else {
-	return 0; 
-  }  
+}  		
+
+  else return 0;
   // This is where all your logic will go
-  while (true){
+//  while (true){
     // TODO: Get user input
->>>>>>> 751497f0a65677be45bd7c8d46f313d8069d793a
+//>>>>>>> 751497f0a65677be45bd7c8d46f313d8069d793a
 
 		// TODO: Output map
-		string actual_map = "                    \n";
-		cout << actual_map;
-	}
-}
+//		string actual_map = "                    \n";
+//		cout << actual_map;
+//	}
+ }
