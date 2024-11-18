@@ -29,7 +29,7 @@ int main(){
   cout << CYAN << "I see you have traveled far to be here. Welcome to Dunmuir's hatching grounds.\n";
   cout << RED << "In order to join the famed riders, you must pass a test. Would you like to continue? (1 for yes, 0 for no)\n"; 
   cin >> w;
-  if (w == 1) {
+  while (w == 1) {
 	set_alternate_window(true); 
 	cout << BOLDMAGENTA << "You and your friends receive a million dollars to go on a dream vacation. Where are you persuading your friends to travel to?\n";
   	cout << "1. Skiing in the Alps! Who doesn’t love the rush of wind whilst speeding down an icy slope?\n";
@@ -42,15 +42,20 @@ int main(){
 	// The cin allows the user to answer with a number 1-5.
 	switch(numberone) {
 		case 1: 
-			firecount++; 
+			firecount++;
+			continue;  
 		case 2:
 			forestcount++;
+			continue; 
 		case 3:
-			watercount++; 
+			watercount++;
+			continue; 
 		case 4:
-			darkcount++; 
+			darkcount++;
+			continue;  
 		case 5: 
-			lightcount++; 
+			lightcount++;
+			continue;
 		default: 
 			return 0; 
 		}
@@ -85,7 +90,7 @@ int main(){
 	cout << "2. My empathy.\n";  
 	cout << "3. My cleverness.\n";  
 	cout << "4. My athleticism.\n"; 
-	cout << "5. My decision-making skills.\n" 
+	cout << "5. My decision-making skills.\n"; 
 	cin >> numberthree; 
 	switch(numberthree) {
                 case 1:
@@ -234,6 +239,7 @@ int main(){
                 default:
                         return 0;
                 }
+
 }  		
 
   else return 0;
