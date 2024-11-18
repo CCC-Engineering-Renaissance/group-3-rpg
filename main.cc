@@ -81,7 +81,7 @@ int main(){
 	cout << "My athleticism.\n"; 
 	cout << "My decision-making skills.\n" 
 	cin >> numberthree; 
-	switch(numberone) {
+	switch(numberthree) {
                 case 1:
                         firecount++;
                 case 2:
@@ -104,7 +104,7 @@ int main(){
 	cout << "You befriend it, take it home, and introduce it to your dog, Max. They love taking baths.\n" 
 	cout << "Stop and pick up the kitten. You bring it to a vet clinic, where you proceed to notify the proper authorities.\n"
 	cin >> numberfour; 
-	switch(numberone) {
+	switch(numberfour) {
                 case 1:
                         firecount++;
                 case 2:
@@ -126,7 +126,7 @@ int main(){
 	cout << "You bet money on your friend.\n"; 
 	cout << "You yap with your teachers, you didn’t know there was a fight. (You are a teacher’s pet).\n";
 	cin >> numberfive; 
-	switch(numberone) {
+	switch(numberfive) {
                 case 1:
                         firecount++;
                 case 2:
@@ -147,8 +147,8 @@ int main(){
 	cout << "Help the others, then collaborate with the Police to take the shooter down.\n";
 	cout << "Hide until he walks past, then you attack while his back is turned.\n"; 
 	cout << "Stay inside, barricade the door, and stand guard. You will not let anyone get hurt on your watch. (You are a teacher’s pet).\n";
-	cin >> numberfive; 
-	switch(numberone) {
+	cin >> numbersix; 
+	switch(numbersix) {
                 case 1:
                         firecount++;
                 case 2:
@@ -169,8 +169,8 @@ int main(){
 	cout << "Going with the flow.\n";
 	cout << "Planning your future.\n"; 
 	cout << "Thinking of the people close to you.\n";
-	cin >> numberfive; 
-	switch(numberone) {
+	cin >> numberseven; 
+	switch(numberseven) {
                 case 1:
                         firecount++;
                 case 2:
@@ -184,7 +184,29 @@ int main(){
                 default:
                         return 0;
                 }
-	}
+
+	  cout << "Which word sticks out to you the most?\n"; 
+	  cout << "Drive.\n"; 
+	  cout << "Purpose.\n"; 
+  	  cout << "Going with the flow.\n"; 
+	  cout << "Determination.\n"; 
+	  cout << "Discipline.\n"; 
+	  cin >> numbereight;
+	  switch(numbereight) {
+                case 1:
+                        firecount++;
+                case 2:
+                        forestcount++;
+                case 3:
+                        watercount++;
+                case 4:
+                        darkcount++;
+                case 5:
+                        lightcount++;
+                default:
+                        return 0;
+                }
+  	}	
   }
   else {
 	return 0; 
