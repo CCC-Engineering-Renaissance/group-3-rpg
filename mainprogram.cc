@@ -31,12 +31,12 @@ int main(){
   cin >> w;
   if (w == 1) {
 	set_alternate_window(true); 
-	cout << BOLDMAGENTA << "You and your friends receive a million dollars to go on a dream vacation. Where are you persuading your friends to travel to?\n"
-  	cout << "1) Skiing in the Alps! Who doesn’t love the rush of wind whilst speeding down an icy slope?\n"
-  	cout << "2) A late-night tea party in Paris, where you can all enjoy decadent desserts and a beautiful view of the city.\n"
-  	cout << "3) A backpacking trip, so you can stare into space and sit in silence. You might enjoy a good book.\n"
-  	cout << "4) A trip to the museum! You love to see all the artifacts and grab pamphlets on your way out.\n" 
-  	cout << "3) You want to travel the whole world anyhow, so you don’t have a particular preference.\n" 
+	cout << BOLDMAGENTA << "You and your friends receive a million dollars to go on a dream vacation. Where are you persuading your friends to travel to?\n";
+  	cout << "1) Skiing in the Alps! Who doesn’t love the rush of wind whilst speeding down an icy slope?\n";
+  	cout << "2) A late-night tea party in Paris, where you can all enjoy decadent desserts and a beautiful view of the city.\n";
+  	cout << "3) A backpacking trip, so you can stare into space and sit in silence. You might enjoy a good book.\n";
+  	cout << "4) A trip to the museum! You love to see all the artifacts and grab pamphlets on your way out.\n"; 
+  	cout << "3) You want to travel the whole world anyhow, so you don’t have a particular preference.\n"; 
 	cin >> numberone; 
 	switch(numberone) {
 		case 1: 
@@ -100,11 +100,11 @@ int main(){
 
   	
 	cout << BOLDGREEN << "You are driving and spot a kitten on the median of a 2 lane road. What do you do?\n";
-	cout << "1. You run directly into traffic. That kitten’s life depends on you.\n"
-	cout << "2. You don’t drive. You park your bike on the side of the street and run over to save the kitten. You take it home and decide to keep it.\n"
-	cout << "3. You pick up the kitten and move it away from the road.\n" 
-	cout << "4. You befriend it, take it home, and introduce it to your dog, Max. They love taking baths.\n" 
-	cout << "5. Stop and pick up the kitten. You bring it to a vet clinic, where you proceed to notify the proper authorities.\n"
+	cout << "1. You run directly into traffic. That kitten’s life depends on you.\n";
+	cout << "2. You don’t drive. You park your bike on the side of the street and run over to save the kitten. You take it home and decide to keep it.\n";
+	cout << "3. You pick up the kitten and move it away from the road.\n"; 
+	cout << "4. You befriend it, take it home, and introduce it to your dog, Max. They love taking baths.\n"; 
+	cout << "5. Stop and pick up the kitten. You bring it to a vet clinic, where you proceed to notify the proper authorities.\n";
 	cin >> numberfour; 
 	switch(numberfour) {
                 case 1:
