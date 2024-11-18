@@ -140,7 +140,28 @@ int main(){
                 default:
                         return 0;
                 }
-
+	  
+	cout << "There's an active shooter, what do you do?\n";
+	cout << "Sprint at them with a fire extinguisher.\n";  
+	cout << "You hide in a tree where you meet a squirrel named Little Johnny.\n"; 
+	cout << "Help the others, then collaborate with the Police to take the shooter down.\n";
+	cout << "Hide until he walks past, then you attack while his back is turned.\n"; 
+	cout << "Stay inside, barricade the door, and stand guard. You will not let anyone get hurt on your watch. (You are a teacher’s pet).\n";
+	cin >> numberfive; 
+	switch(numberone) {
+                case 1:
+                        firecount++;
+                case 2:
+                        forestcount++;
+                case 3:
+                        watercount++;
+                case 4:
+                        darkcount++;
+                case 5:
+                        lightcount++;
+                default:
+                        return 0;
+                }
 
 	}
   }
