@@ -81,24 +81,67 @@ int main(){
 	cout << "My athleticism.\n"; 
 	cout << "My decision-making skills.\n" 
 	cin >> numberthree; 
-	switch (planetchoice) {
-		case 1: 
-			cout << "Congratulations! Your covenant has mercilessly destroyed Reach.\n";
-			break;
-		case 2:
-			cout<< "Congratulations! Your covenant has mercilessly destroyed Arcadia.\n";
-			break;
-		case 3:
-			cout<<"Congratulations! Your covenant has mercilessly destroyed Earth.\n";
-			break;
-		case 4:
-			cout<<"Congratulations! Your covenant has mercilessly destroyed Harvest.\n";
-			break;
-		default: 
-			cout << "Warning, ship destruction iminent. Incoming enemy batallion.\n";
-				break;
-		}
+	switch(numberone) {
+                case 1:
+                        firecount++;
+                case 2:
+                        forestcount++;
+                case 3:
+                        watercount++;
+                case 4:
+                        darkcount++;
+                case 5:
+                        lightcount++;
+                default:
+                        return 0;
+                }
+
   	
+	cout << "You are driving and spot a kitten on the median of a 2 lane road. What do you do?\n";
+	cout << "You run directly into traffic. That kitten’s life depends on you.\n"
+	cout << "You don’t drive. You park your bike on the side of the street and run over to save the kitten. You take it home and decide to keep it.\n"
+	cout << "You pick up the kitten and move it away from the road.\n" 
+	cout << "You befriend it, take it home, and introduce it to your dog, Max. They love taking baths.\n" 
+	cout << "Stop and pick up the kitten. You bring it to a vet clinic, where you proceed to notify the proper authorities.\n"
+	cin >> numberfour; 
+	switch(numberone) {
+                case 1:
+                        firecount++;
+                case 2:
+                        forestcount++;
+                case 3:
+                        watercount++;
+                case 4:
+                        darkcount++;
+                case 5:
+                        lightcount++;
+                default:
+                        return 0;
+                }
+
+	cout << "Your friend is in a fight happening in the middle of your school, how do you react?\n";
+	cout << "You roundhouse kick your friend's opponent, Bruce Lee style.\n";  
+	cout << "You hit the opponent with a tree branch.\n"; 
+	cout << "You run to your friend's side and square up.\n";
+	cout << "You bet money on your friend.\n"; 
+	cout << "You yap with your teachers, you didn’t know there was a fight. (You are a teacher’s pet).\n";
+	cin >> numberfive; 
+	switch(numberone) {
+                case 1:
+                        firecount++;
+                case 2:
+                        forestcount++;
+                case 3:
+                        watercount++;
+                case 4:
+                        darkcount++;
+                case 5:
+                        lightcount++;
+                default:
+                        return 0;
+                }
+
+
 	}
   }
   else {
