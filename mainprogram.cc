@@ -246,10 +246,29 @@ int main(){
   // This is where all your logic will go
 //  while (true){
     // TODO: Get user input
-//>>>>>>> 751497f0a65677be45bd7c8d46f313d8069d793a
+	char input;
+	int y_axis;
+	int x_axis;
+	while (input != m) {
+	if (input == 'w'){
+	y_axis = y_axis ++;
+	}
+	if (input == 's') {
+	y_axis = y_axis --;
+	}
+	if (input == 'd'){
+	x_axis = x_axis ++;
+	}
+	if (input == 'a') {
+	x_axis = x_axis --;
+	}
+	}
 
-		// TODO: Output map
-//		string actual_map = "                    \n";
+// TODO: Output map
+//		string actual_map = {"******************************************************************************************************",
+				     "*                                                                                                    *",
+				     "*                                                                                                    *"
+				     "*                                                                                                    *"};
 //		cout << actual_map;
 //	}
  }
