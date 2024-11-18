@@ -163,7 +163,28 @@ int main(){
                 default:
                         return 0;
                 }
-
+	  
+	cout << "Who are you when you’re by yourself?\n";
+	cout << "Thinking of what to do next.\n";  
+	cout << "Appreciating what's around you.\n"; 
+	cout << "Going with the flow.\n";
+	cout << "Planning your future.\n"; 
+	cout << "Thinking of the people close to you.\n";
+	cin >> numberfive; 
+	switch(numberone) {
+                case 1:
+                        firecount++;
+                case 2:
+                        forestcount++;
+                case 3:
+                        watercount++;
+                case 4:
+                        darkcount++;
+                case 5:
+                        lightcount++;
+                default:
+                        return 0;
+                }
 	}
   }
   else {
