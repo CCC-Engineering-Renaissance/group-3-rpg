@@ -6,6 +6,7 @@
 #include <cstdlib>
 using namespace std; 
 
+void Mapoutput (int x_axis, int y_axis);
 
 int main(){
   vector<char> map; // You can use a 2D vector if you'd like, but it's a lot better to emulate a 2D vector with a 1D one.
