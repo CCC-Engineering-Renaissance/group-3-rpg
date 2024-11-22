@@ -23,9 +23,106 @@ __   __            _          _   _                                 _
 using namespace std; 
 
 void Mapoutput (int x_axis, int y_axis);
+void Questions(bool w);
 
 int main(){
-	bool w;  
+void Mapoutput(int x_axis, int y_axis){
+	vector <string> Map = {
+		"* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *",
+		"*    =|=|==========|===========|======================|==============|========================|=|=    *",
+		"*     | |          |           |         :)           |              |                        | |     *",
+		"*     | |__________|___________|__________|___________|______________|________________________| |     *",
+		"*     | |   FOOD   |   WATER   |     DRAGON FEED      |     ARMOR    |    MEDICAL SUPPLIES    | |     *",
+		"*     | |__________|___________|______________________|______________|________________________| |     *",
+		"*                 __________________________________________________________________                  *",
+		"*               /                                                                   \\                *",
+		"*              /                                                               0     \\               *",
+		"*             /                                                              ;=#=;    \\              *",
+		"*            |                              _______________                  | | |       |            *",
+		"*            |                             /               \\                 / \\        |           *",
+		"*             \\                           /                 \\                          /            *",
+		"*              \\                         /                   \\                        /             *",
+		"*               |                       /                     \\                      |               *",
+		"*               |                      |                       |                     |                *",
+		"*              /                        \\                     /                       \\             *",
+		"*             /                          \\                   /                         \\            *",
+		"*            |                            \\                 /                           |            *",
+		"*            |__________                   \\_______________/                  __________|            *",
+		"*                       \\            0                                       /                       *",
+		"*                        \\         ;=#=;                                    /                        *",
+		"*                         \\        | | |                                   /                         *",
+		"*                          \\____    / \\                              _____/                         *",
+		"*                                \\_____                        _____/                                 *",
+		"*    / - \\                             \\                      /                              / - \\    *",
+		"*   /     \\                             \\                    /                              /     \\   *",
+		"*  /       \\                             \\                  /                              /       \\  *",
+		"* /  _____  \\                           / \\                /\\                            /  _____  \\ *",
+		"*/|  |   |  |\\                         /   \\              /  \\                          /|  |   |  |\\*",
+		"* |  |   |  |                         /     \\____________/    \\                           |  |   |  | *",
+		"* |  -----  |                        /      /            \\     \\                          |  -----  | *",
+		"* |_________|_______________________/______/              \\_____\\_________________________|_________| *",
+		"*     ___      ___      ___      ___      |                |      ___      ___      ___      ___      *",
+		"*    |   |    |   |    |   |    |   |     |                |     |   |    |   |    |   |    |   |     *",
+		"*    |___|    |___|    |___|    |___|     | 99999999999999 |     |___|    |___|    |___|    |___|     *",
+		"*                                         |                |                                          *",
+		"* _______________________________________ |                |_________________________________________ *",
+		"*                                          \\             /                                           *",
+		"*                                           |            |                                            *",
+		"*                                           |            |                                            *",
+		"* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+	};
+
+	char character = 'O';
+	bool x; 
+	// This boolean variable is used to call the function that holds the questions. 
+	//Map.at(40).at(50) = character;
+
+	for (int i = 0; i < Map.size(); i++) {
+		cout << Map.at(i) << endl;
+	}
+	else return 0; // DSD: This is literally pointless. else's only go with if's
+				   // This is where all your logic will go
+				   //  while (true){
+				   // TODO: Get user input
+	char input{}; //DSD: Julian, what the hecking heckles were you having them do with the curly braces?
+	int y_axis{}; 
+	int x_axis{};
+	char character = 'O'; //DSD Redeclaration of character. An error. Also, why.
+
+
+	while (input != 'm') { //DSD What does m represent?
+		input = quick_read();
+		if (input == 'w') {
+			y_axis = y_axis++; //DSD Carefully consider where the origin is in your above map...
+		}
+		if (input == 's') {
+			y_axis = y_axis--;
+		}
+		if (input == 'd') {
+			x_axis = x_axis++;
+		}
+		if (input == 'a') {
+			x_axis = x_axis--;
+		}
+		// Map size is 102 x 42 //DSD Why are these down here and not up by the map?
+		// Playable map size is 100 x 40
+
+		//	The starting point of the character is actual_map.at(100).at(50)
+
+
+		// TODO: Output map
+	}
+	//system("cls"); //DSD You can use a function in colors.h to do this same thing, and more effectively
+	set_raw_mode(false);
+		set_alternate_window(true);  
+		cout << BOLDGREEN << "Hello there.\n"; 
+		cout << CYAN << "I see you have traveled far to be here. Welcome to Dunmuir's hatching grounds.\n";
+		cout << RED << "In order to join the famed riders, you must pass a test. Would you like to continue? (1 for yes, 0 for no)\n"; 
+		cin >> w;
+		cout << Questions(w); 
+}
+
+void Questions(bool w) {
 	int numberone; 
 	int numbertwo; 
 	int numberthree; 
@@ -40,11 +137,6 @@ int main(){
 	int watercount = 0; 
 	int darkcount = 0;
 	int lightcount = 0; 
-	set_alternate_window(true);  
-	cout << BOLDGREEN << "Hello there.\n"; 
-	cout << CYAN << "I see you have traveled far to be here. Welcome to Dunmuir's hatching grounds.\n";
-	cout << RED << "In order to join the famed riders, you must pass a test. Would you like to continue? (1 for yes, 0 for no)\n"; 
-	cin >> w;
 	while (w == 1) { 
 		cout << BOLDMAGENTA << "You and your friends receive a million dollars to go on a dream vacation. Where are you persuading your friends to travel to?\n";
 		cout << "1. Skiing in the Alps! Who doesn’t love the rush of wind whilst speeding down an icy slope?\n";
@@ -332,92 +424,4 @@ int main(){
 		cout << "Congratulations. You have been chosen by the light dragon.\n";
 	else
 		cout << "Error. Lizard? Try again.\n"; 
-}
-
-void Mapoutput(int x_axis, int y_axis){
-	vector <string> Map = {
-		"* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *",
-		"*    =|=|==========|===========|======================|==============|========================|=|=    *",
-		"*     | |          |           |         :)           |              |                        | |     *",
-		"*     | |__________|___________|__________|___________|______________|________________________| |     *",
-		"*     | |   FOOD   |   WATER   |     DRAGON FEED      |     ARMOR    |    MEDICAL SUPPLIES    | |     *",
-		"*     | |__________|___________|______________________|______________|________________________| |     *",
-		"*                 __________________________________________________________________                  *",
-		"*               /                                                                   \\                *",
-		"*              /                                                               0     \\               *",
-		"*             /                                                              ;=#=;    \\              *",
-		"*            |                              _______________                  | | |       |            *",
-		"*            |                             /               \\                 / \\        |           *",
-		"*             \\                           /                 \\                          /            *",
-		"*              \\                         /                   \\                        /             *",
-		"*               |                       /                     \\                      |               *",
-		"*               |                      |                       |                     |                *",
-		"*              /                        \\                     /                       \\             *",
-		"*             /                          \\                   /                         \\            *",
-		"*            |                            \\                 /                           |            *",
-		"*            |__________                   \\_______________/                  __________|            *",
-		"*                       \\            0                                       /                       *",
-		"*                        \\         ;=#=;                                    /                        *",
-		"*                         \\        | | |                                   /                         *",
-		"*                          \\____    / \\                              _____/                         *",
-		"*                                \\_____                        _____/                                 *",
-		"*    / - \\                             \\                      /                              / - \\    *",
-		"*   /     \\                             \\                    /                              /     \\   *",
-		"*  /       \\                             \\                  /                              /       \\  *",
-		"* /  _____  \\                           / \\                /\\                            /  _____  \\ *",
-		"*/|  |   |  |\\                         /   \\              /  \\                          /|  |   |  |\\*",
-		"* |  |   |  |                         /     \\____________/    \\                           |  |   |  | *",
-		"* |  -----  |                        /      /            \\     \\                          |  -----  | *",
-		"* |_________|_______________________/______/              \\_____\\_________________________|_________| *",
-		"*     ___      ___      ___      ___      |                |      ___      ___      ___      ___      *",
-		"*    |   |    |   |    |   |    |   |     |                |     |   |    |   |    |   |    |   |     *",
-		"*    |___|    |___|    |___|    |___|     | 99999999999999 |     |___|    |___|    |___|    |___|     *",
-		"*                                         |                |                                          *",
-		"* _______________________________________ |                |_________________________________________ *",
-		"*                                          \\             /                                           *",
-		"*                                           |            |                                            *",
-		"*                                           |            |                                            *",
-		"* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
-	};
-
-	char character = 'O';
-	//Map.at(40).at(50) = character;
-
-	for (int i = 0; i < Map.size(); i++) {
-		cout << Map.at(i) << endl;
-	}
-	else return 0; // DSD: This is literally pointless. else's only go with if's
-				   // This is where all your logic will go
-				   //  while (true){
-				   // TODO: Get user input
-	char input{}; //DSD: Julian, what the hecking heckles were you having them do with the curly braces?
-	int y_axis{}; 
-	int x_axis{};
-	char character = 'O'; //DSD Redeclaration of character. An error. Also, why.
-
-
-	while (input != 'm') { //DSD What does m represent?
-		input = quick_read();
-		if (input == 'w') {
-			y_axis = y_axis++; //DSD Carefully consider where the origin is in your above map...
-		}
-		if (input == 's') {
-			y_axis = y_axis--;
-		}
-		if (input == 'd') {
-			x_axis = x_axis++;
-		}
-		if (input == 'a') {
-			x_axis = x_axis--;
-		}
-		// Map size is 102 x 42 //DSD Why are these down here and not up by the map?
-		// Playable map size is 100 x 40
-
-		//	The starting point of the character is actual_map.at(100).at(50)
-
-
-		// TODO: Output map
-		set_raw_mode(false);
-	}
-	//system("cls"); //DSD You can use a function in colors.h to do this same thing, and more effectively
 }
