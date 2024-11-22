@@ -118,8 +118,8 @@ void Mapoutput(int x_axis, int y_axis){
 		cout << BOLDGREEN << "Hello there.\n"; 
 		cout << CYAN << "I see you have traveled far to be here. Welcome to Dunmuir's hatching grounds.\n";
 		cout << RED << "In order to join the famed riders, you must pass a test. Would you like to continue? (1 for yes, 0 for no)\n"; 
-		cin >> w;
-		cout << Questions(w); 
+		cin >> x;
+		cout << Questions(x); 
 }
 
 void Questions(bool w) {
