@@ -359,6 +359,7 @@ void Dragoncount () {
 		cout << "Congratulations. You have been chosen by the dark dragon.\n";
 	else if (lightcount > firecount and lightcount > forestcount and lightcount > darkcount and lightcount > watercount) 
 		cout << "Congratulations. You have been chosen by the light dragon.\n";
+	// Else if's are used for mutual exclusivity - one runs and the others are skipped. Only one can run at a time, and the else only outputs if everything else fails. 
 	else
 		cout << "Error. Lizard? Try again.\n"; 
 }
